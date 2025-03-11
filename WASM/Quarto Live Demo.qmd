@@ -1,0 +1,23 @@
+---
+title: "Quarto Live Demo"
+format: live-html
+pyodide:
+  packages:
+    - matplotlib
+    - numpy
+    - seaborn
+---
+
+## Quarto Live
+
+```{pyodide}
+#| fig-width: 8
+#| fig-height: 4
+#| fig-dpi: 72
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.random.normal(1, 1, 10000)
+plt.plot(x, '-')
+plt.show() 
+```
